@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
  
     Vector3 velocity; // Velocity of fall
     bool isGrounded;
- 
+
     // Update is called once per frame
     void Update()
     {
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
  
         // Right is the red Axis, foward is the blue axis
         Vector3 move = transform.right * x + transform.forward * z;
- 
+
         controller.Move(move * speed * Time.deltaTime);
  
         // Check if the player is on the ground so he can jump
